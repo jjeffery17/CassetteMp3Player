@@ -43,7 +43,17 @@ The main improvements to complete in the next iteration is to use custom designe
 
 ## Second Prototype
 
-Improvements:
+### Research
+
+Some better existing cassette casings exist like the following:
+![amazon cassette shell](Images/cassette_shell_amazon.png)
+However would still need modification to have the pcb be effectively placed inside, as well as wastage of the internal parts such as the tape. The clear casing design could be a consideration for future iterations or versions however.
+
+[This website](https://brainbound.blog/cassette-size-dimensions-guide) states the cassettes are standardised to 101.6 mm x 63.5 mm x 12.7 mm (4 x 2.5 x 0.5 inches). I measured the size of one of old the cassettes I bought which seems to match these dimensions quite accurately, therefore these measurements are probably reliable. Making the mp3 player fit standards would be veru useful to allow it to fit with existing products on the market (such as cases and holders). 
+
+[This website](https://vamosarema.com/) provides some potentially useful diagrams for modelling.
+
+Final Improvements:
 - Use custom cassette case
 - Use custom mp3 player core
 - Ensure all ports and buttons are easily accessable

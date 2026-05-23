@@ -43,4 +43,11 @@ The main improvements to complete in the next iteration is to use custom designe
 
 ## Second Prototype
 
+Improvements:
+- Use custom cassette case
+- Use custom mp3 player core
+- Ensure all ports and buttons are easily accessable
+
+
+
 ## Production Version

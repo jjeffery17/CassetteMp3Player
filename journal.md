@@ -8,6 +8,8 @@ The main idea of the project is to create a stylistic mp3 player that functions 
 
 ### Plan and Design
 
+As far as I can tell, no existing product like this already exists.
+
 The first prototype was a simple proof of concept design, using an existing pocket mp3 player and reorganising the internals to simply fit inside an existing cassette tape.
 
 mp3 player core front:
@@ -51,7 +53,9 @@ However would still need modification to have the pcb be effectively placed insi
 
 [This website](https://brainbound.blog/cassette-size-dimensions-guide) states the cassettes are standardised to 101.6 mm x 63.5 mm x 12.7 mm (4 x 2.5 x 0.5 inches). I measured the size of one of old the cassettes I bought which seems to match these dimensions quite accurately, therefore these measurements are probably reliable. Making the mp3 player fit standards would be veru useful to allow it to fit with existing products on the market (such as cases and holders). 
 
-[This website](https://vamosarema.com/) provides some potentially useful diagrams for modelling.
+[This website](https://vamosarema.com/) provides some potentially useful diagrams for modelling. Which when opening again seems to actually just be an advertising website.
+
+Some useful diagrams I have found are in Images/Diagrams, but I couldn't find any full schematics/diagrams for the whole compact cassette design. I think the best method for modelling the cassette would be to use an existing 3d model and ensuring the measurements are correct.
 
 Final Improvements:
 - Use custom cassette case

@@ -33,6 +33,12 @@ The cassette also came with a case which was quite a nice addition, and could be
 prototype in case:
 ![prototype one in case](Images/v1_case.jpg)
 
+Development cost:
+- £3 for 3 old cassette tapes
+- £0 (~£10 new?) already owned mp3 player pcb
+- £0 (negligable) already owned solder and wires
+Total: £3
+
 ### Reflection
 
 I think the idea works well and can be iterated upon, the ability to see some of the circuitry is quite a nice addition and I feel adds to the aesthetic. The case is also a nice addition and adds both durability as well as a more fun user experience.
@@ -62,6 +68,15 @@ Final Improvements:
 - Use custom mp3 player core
 - Ensure all ports and buttons are easily accessable
 
+For the custom cassette case, it can be simply 3d printed, at least for this prototype. I can probably use [JLC3DP](https://jlc3dp.com/) as I would most likely be using their similar service, [JLCPCB](https://jlcpcb.com/), for PCB prototyping. 
+
+For the mp3 player core, a custom design with minimal hand soldering seems like the best idea. Looking at existing designs, [bumpy](https://www.mattkeeter.com/projects/bumpy/) is the first one I looked at, which seems to be quite effective. It has a small form factor, is able to have songs added via usb, and is reachargable (lasting for 24h off one charge apparently). The position of the components would not work in its current configuration, but with the schematics it would most likely be pretty easy to reorder components and resize to fit the case. The leds also are a very nice addition, but may not fit the retro aesthetic. Some changes to the design of them might make it work very well though (using orange leds? putting them through some diffusion filter through the case?).
+
+Thinking about the custom PCB design, lots of components are surface mounted and therefore quite hard to solder at home, needing JLCPCB or whichever other manufacturer to mount them for me. The bumpy prototype used (oshpark)[https://oshpark.com/] which might be a good option. Looking at their (parts library)[https://jlcpcb.com/parts] they seem to have the ATMmega32U4, but not the VS1003.
+
+Looking at other designs, (this project)[https://circuitdigest.com/electronic-circuits/diy-mp3-player-circuit-diagram] seems quite adaptable and compact, and much simpler to adapt than the bumpy design as less is being designed in-house. The main component, the (GPD2846 MP3 player Module)[https://www.aliexpress.com/s/wiki-ssr/article/gpd2846-mp3-player-module], seems to be pretty effective. Maufactured by GeneralPlus, I can't seem to find any official datasheets or documentation for it on their website but lots of unofficial info (here)[https://www.circuits-diy.com/mp3-player-circuit-using-gpd2846-module/] and (here)[https://www.alldatasheet.com/datasheet-pdf/view/1132627/etc2/gpd2846a.html] seems to be hopefully sufficient. Building a pcb around this should be more straight forward, but would require some hand soldering to connect our custom PCB to the GPD2846 board. 
+
+All the projects using the GPD2846 seem to use the KIA78R33PI, a Terminal Low Dropout Voltage Regulator, which converts the 9V battery to a 3.3V input. This would not likely be neccessary for us, but a rechargable 3.3V abttery system should be used instead. The (Adafruit Micro-Lipo Charger)[https://www.adafruit.com/product/4410] might be a good solution for this, allowing for simple usb-c charging, li-ion battery connection and 5V output (accepted by the GPD2846).
 
 
 ## Production Version

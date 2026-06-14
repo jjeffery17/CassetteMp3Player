@@ -78,5 +78,6 @@ Looking at other designs, (this project)[https://circuitdigest.com/electronic-ci
 
 All the projects using the GPD2846 seem to use the KIA78R33PI, a Terminal Low Dropout Voltage Regulator, which converts the 9V battery to a 3.3V input. This would not likely be neccessary for us, but a rechargable 3.3V abttery system should be used instead. The (Adafruit Micro-Lipo Charger)[https://www.adafruit.com/product/4410] might be a good solution for this, allowing for simple usb-c charging, li-ion battery connection and 5V output (accepted by the GPD2846).
 
+https://esp32io.com/tutorials/esp32-mp3-player
 
 ## Production Version
